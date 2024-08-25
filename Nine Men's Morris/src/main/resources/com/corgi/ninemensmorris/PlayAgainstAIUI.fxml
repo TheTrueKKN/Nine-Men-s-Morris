@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="760.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.corgi.ninemensmorris.PlayAgainstAIUI">
+   <children>
+      <Label layoutX="158.0" layoutY="126.0" text="Play against AI">
+         <font>
+            <Font size="53.0" />
+         </font>
+      </Label>
+      <Button layoutX="210.0" layoutY="294.0" mnemonicParsing="false" onAction="#btnStartAsRedClicked" text="Start as RED" textFill="RED" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="210.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="210.0" layoutY="397.0" mnemonicParsing="false" onAction="#btnStartAsYellowClicked" text="Start as YELLOW" textFill="#a19f1d" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="210.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="210.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnStartAsRandomClicked" text="Start as RANDOM" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="210.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Circle fill="RED" layoutX="428.0" layoutY="317.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#dfff00" layoutX="428.0" layoutY="420.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="70.0" layoutY="668.0" mnemonicParsing="false" onAction="#btnBackClicked" text="Back ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Circle layoutX="428.0" layoutY="521.0" radius="13.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" proportional="false" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.9176470637321472" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+   </children>
+</AnchorPane>
